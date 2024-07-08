@@ -1267,8 +1267,9 @@ class CMD(ClimateIndicator):
         self.thresh = 2
         self.units = {"thresh": "m s-1"}
         self.func = xc.atmos.calm_days
+        self.freq = "QS-DEC"
 
-    def compute(self, thresh=None, **params):
+    def compute(self, thresh=None, freq="QS-DEC", **params):
         """Calculate number of calm days.
 
         Parameters
@@ -1289,7 +1290,7 @@ class CMD(ClimateIndicator):
             https://xclim.readthedocs.io/en/stable/api.html#xclim.indicators.atmos.calm_days
 
         """
-        return self.compute_climate_indicator(params=params, thresh=thresh)
+        return self.compute_climate_indicator(params=params, thresh=thresh, freq=freq)
 
 
 class SQI(ClimateIndicator):
