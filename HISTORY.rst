@@ -150,7 +150,7 @@ Documentation
 
 * HYRAS file naming convention
 * delete blanks from output file name
-* calcualte indicators woth length of time axis is 1
+* calcualte indicators with length of time axis is 1
 
 0.6.6 (2023-03-21)
 ------------------
